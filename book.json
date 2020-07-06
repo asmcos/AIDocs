@@ -3,7 +3,27 @@
     "author":"asmcos",
     "description":"开源的AI字典项目",
     "language" : "zh-hans",
-    "plugins": ["chapter-fold"],
+    "plugins": ["chapter-fold","hide-element","bootstrap-callout","lunr","intopic-toc","tbfed-pagefooter","theme-comscore" ,"livereload"],
+    "pluginsConfig": {
+        "intopic-toc":{
+            "label":"文章内容",
+            "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6",
+          "mode": "nested",
+          "maxDepth": 2,
+          "isCollapsed": false,
+          "isScrollspyActive": true,
+          "visible": true
+        },
+        "tbfed-pagefooter": {
+        "copyright":"Copyright &copy zhanluejia",
+        "modify_label": "该文件修订时间：",
+        "modify_format": "YYYY-MM-DD HH:mm:ss"
+       },
+        "hide-element": {
+                "elements":[".gitbook-link"]
+            }
+    },
+
     "links" : {
         "sharing": {
            "google": null,
