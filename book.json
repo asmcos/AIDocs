@@ -3,10 +3,10 @@
     "author":"asmcos",
     "description":"开源的AI字典项目",
     "language" : "zh-hans",
-    "plugins": ["chapter-fold","hide-element","bootstrap-callout","lunr","intopic-toc","tbfed-pagefooter","theme-comscore" ,"livereload"],
+    "plugins": ["chapter-fold","hide-element","bootstrap-callout","lunr","intopic-toc","tbfed-pagefooter","theme-comscore" ,"livereload","favicon"],
     "pluginsConfig": {
         "intopic-toc":{
-            "label":"文章内容",
+            "label":"目录",
             "selector": ".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6",
           "mode": "nested",
           "maxDepth": 2,
@@ -15,10 +15,19 @@
           "visible": true
         },
         "tbfed-pagefooter": {
-        "copyright":"Copyright &copy zhanluejia",
-        "modify_label": "该文件修订时间：",
-        "modify_format": "YYYY-MM-DD HH:mm:ss"
+            "copyright":"Copyright &copy zhanluejia",
+            "modify_label": "该文件修订时间：",
+            "modify_format": "YYYY-MM-DD HH:mm:ss"
        },
+       "favicon": {
+            "shortcut": "assets/images/favicon.ico",
+            "bookmark": "assets/images/favicon.ico",
+            "appleTouch": "assets/images/apple-touch-icon.png",
+            "appleTouchMore": {
+                "120x120": "assets/images/apple-touch-icon-120x120.png",
+                "180x180": "assets/images/apple-touch-icon-180x180.png"
+            }
+        },
         "hide-element": {
                 "elements":[".gitbook-link"]
             }
