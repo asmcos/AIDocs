@@ -1,0 +1,19 @@
+{
+    "title":"《AI字典》",
+    "author":"asmcos",
+    "description":"开源的AI字典项目",
+    "language" : "zh-hans",
+    "links" : {
+        "sharing": {
+           "google": null,
+           "facebook": null,
+           "twitter": null,
+           "weibo": null,
+           "all": null
+       },
+       "sidebar" : {
+        "github源码" : "https://github.com/asmcos/AIDocs"
+       }
+    }
+
+}
