@@ -3,6 +3,7 @@
     "author":"asmcos",
     "description":"开源的AI字典项目",
     "language" : "zh-hans",
+    "plugins": ["chapter-fold"],
     "links" : {
         "sharing": {
            "google": null,
