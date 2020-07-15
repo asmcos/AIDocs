@@ -74,6 +74,14 @@
  2016 年，谷歌 DeepMind 研发的 AlphaGo 击败围棋世界冠军李世石。
 
 
+#### 人工智能两大派别
+
+* “符号主义”（Symbolicism），又称逻辑主义、计算机学派，主张用公理和逻辑体系搭建一套人工智能系统。
+  核心代表：约翰•麦卡锡 McCarthy, 马文·明斯基 Minsky, Simon et Newell可以看作 AI 的创始人，其他研究人员 Dreyfus, Searle, Brooks，
+
+* “连接主义”（Connectionism），又叫仿生学派，主张模仿人类的神经元，用神经网络的连接机制实现人工智能。
+   核心代表：约翰·霍普菲尔德（John Hopfield）, Rumelhart, LeCun 和 Hinton,其他研究人员 (Holland, Hopfield)
+
 
 * 监督学习
 * 无监督学习
