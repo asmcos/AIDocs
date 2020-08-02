@@ -10,3 +10,4 @@
 * [书籍](book.md)
 * [视频](video.md)
 * [网站资源](web.md)
+* [配色表](color.md)
