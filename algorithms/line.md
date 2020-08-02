@@ -9,3 +9,8 @@ f(x) = W * x + b
 ![线性回归图](http://www.zhanluejia.net.cn/static/uploads/c68c9a67c2ea9edb15447908b655d416.png)
 
 [代码地址](http://www.zhanluejia.net.cn/zlj/question.html?questionid=5f1fda9da4e0175b18806e02)
+
+#### 应用场景
+线性回归可以处理数值型的数据，并且预测目标数据为连续型数据。
+例如：根据天气中的 CO 和 NOX量 推测 O3量（使用了UCI Air quality 数据集）
+     、股票预测
