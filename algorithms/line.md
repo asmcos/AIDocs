@@ -19,3 +19,5 @@ f(x) = W * x + b
 ### 参考资料
 
  * 1.https://zhuanlan.zhihu.com/p/147297924
+ * 2.线性回归、损失函数和梯度 https://my.oschina.net/u/778683/blog/3101468
+     这篇文章讲解的特别易懂
