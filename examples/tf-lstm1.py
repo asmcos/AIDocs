@@ -13,3 +13,7 @@ lstm = tf.keras.layers.LSTM(8)
 output = lstm(inputs)
 print(output.shape)
 
+lstm1 = tf.keras.layers.LSTM(8,return_sequences=True)
+output1 = lstm1(inputs)
+print(output1.shape)
+
