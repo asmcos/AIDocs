@@ -11,30 +11,31 @@ NUM_EPOCHS = 5
 
 STEPS_PER_EPOCH = 5
 
-model = tf.keras.Sequential([
-    tf.keras.layers.LSTM(32,input_shape=(32,10),return_sequences=True),
-    tf.keras.layers.Conv1D(32, 3, activation='relu',
-                           kernel_regularizer=tf.keras.regularizers.l2(0.02),
-                           input_shape=(32, 10)),
+class MyModel(tf.keras.models.Model):
+    def __init__(self):
+        super(MyModel, self).__init__()
+        self.lstm1 = tf.keras.layers.LSTM(32)
+        self.d1 = tf.keras.layers.Dense(16, activation="relu", kernel_regularizer="l2")
+        self.d2 = tf.keras.layers.Dense(1, activation="sigmoid")
 
-    tf.keras.layers.MaxPooling1D(),
-    tf.keras.layers.Flatten(),
-    tf.keras.layers.Dropout(0.1),
+    def call(self, inputs, training=None, mask=None):
+        # inputs: [batch_size, seq_len]
 
-    tf.keras.layers.Dense(64, activation='relu'),
+        x = self.lstm1(inputs)
+        print(x.shape)
+        x = self.d1(x)  # [batch_size, 16]
+        x = self.d2(x)  # [batch_size, 1]]
+        return x
 
-    tf.keras.layers.BatchNormalization(),
-    tf.keras.layers.Dense(32)
-])
+model = MyModel()
 
 optimizer = tf.keras.optimizers.Adam(0.001)
-loss_fn = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
+loss_fn = tf.keras.losses.BinaryCrossentropy()
 
 @tf.function
 def train_step(inputs, labels):
   with tf.GradientTape() as tape:
     predictions = model(inputs, training=True)
-    print(model.losses)
     regularization_loss=tf.math.add_n(model.losses)
     pred_loss=loss_fn(labels, predictions)
     total_loss=pred_loss + regularization_loss
