@@ -95,6 +95,8 @@ model = MyModel()
 
 optimizer = tf.keras.optimizers.Adam(0.001)
 loss_fn = tf.keras.losses.BinaryCrossentropy()
+metrics = tf.keras.metrics.BinaryAccuracy()
+
 
 @tf.function
 def train_step(inputs, labels):
@@ -107,9 +109,12 @@ def train_step(inputs, labels):
   gradients = tape.gradient(total_loss, model.trainable_variables)
   optimizer.apply_gradients(zip(gradients, model.trainable_variables))
 
-
+# 训练 train
 for epoch in range(NUM_EPOCHS):
   train_step(inputs, labels)
   print("Finished epoch", epoch)
 
-
+# 评估
+logits = model(inputs)
+metrics(labels, logits)
+print(metrics.result())
