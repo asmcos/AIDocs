@@ -7,7 +7,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers
 import numpy as np
-
+from keras.utils import np_utils
 # 如果下载数据ssl验证不过，可以添加下面2行
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
@@ -21,8 +21,14 @@ batch_size = 64
 (x_train, y_train), (x_test, y_test) = keras.datasets.mnist.load_data()
 
 # 原始数据 60000，28，28
-x_train = np.reshape(x_train, (-1,784))
-x_test = np.reshape(x_test, (-1,784))
+#x_train = np.reshape(x_train, (-1,784))
+#x_test = np.reshape(x_test, (-1,784))
+
+#
+# for lstm 转化数据类型
+#
+x_train = x_train.astype('float32') / 255.
+x_test = x_test.astype('float32') / 255.
 
 
 # Reserve 10,000 samples for validation.
@@ -43,13 +49,25 @@ val_dataset = val_dataset.batch(batch_size)
 
 #
 # 2. model
+# my Model test lstm
 #
-inputs = keras.Input(shape=(784,), name="digits")
-x1 = layers.Dense(64, activation="relu")(inputs)
-x2 = layers.Dense(64, activation="relu")(x1)
-outputs = layers.Dense(10, name="predictions")(x2)
-model = keras.Model(inputs=inputs, outputs=outputs)
 
+class MyModel(tf.keras.models.Model):
+    def __init__(self):
+        super(MyModel, self).__init__()
+        self.lstm1 = tf.keras.layers.LSTM(32,input_shape=(28,28))
+        self.d1 = tf.keras.layers.Dense(16, activation="relu", kernel_regularizer="l2")
+        self.d2 = tf.keras.layers.Dense(10)
+
+    def call(self, inputs, training=None, mask=None):
+        # inputs: [batch_size, seq_len]
+        x = self.lstm1(inputs)
+        x = self.d1(x)  # [batch_size, 16]
+        x = self.d2(x)  # [batch_size, 1]]
+        return x
+
+
+model = MyModel()
 
 # Instantiate an optimizer.
 optimizer = keras.optimizers.SGD(learning_rate=1e-3)
