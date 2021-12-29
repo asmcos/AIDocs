@@ -81,7 +81,7 @@ class MyModel(tf.keras.models.Model):
         x = self.lstm1(inputs)
         x = self.d1(x)  
         x = self.d2(x)  
-        print(x)
+        # print(x)
         return x
 
 model = MyModel()
@@ -108,10 +108,11 @@ def train_step(inputs, labels):
 
   gradients = tape.gradient(total_loss, model.trainable_variables)
   optimizer.apply_gradients(zip(gradients, model.trainable_variables))
-
+  return pred_loss
 # 训练 train
 for epoch in range(NUM_EPOCHS):
-  train_step(inputs, labels)
+  pred_loss = train_step(inputs, labels)
+  print(pred_loss)
   print("Finished epoch", epoch)
 
 # 评估

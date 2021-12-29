@@ -3,7 +3,7 @@
     "author":"asmcos",
     "description":"开源的AI字典项目",
     "language" : "zh-hans",
-    "plugins": ["chapter-fold","hide-element","bootstrap-callout","lunr","intopic-toc","tbfed-pagefooter","livereload","favicon"],
+    "plugins": ["chapter-fold","hide-element","bootstrap-callout","lunr","intopic-toc","tbfed-pagefooter","livereload","favicon","insert-logo"],
     "pluginsConfig": {
         "intopic-toc":{
             "label":"目录",
@@ -28,6 +28,10 @@
                 "180x180": "assets/images/apple-touch-icon-180x180.png"
             }
         },
+        "insert-logo": {
+           "url": "img/ailabs.png",
+           "style": "background: none;width:100%;height:auto;"
+       },
         "hide-element": {
                 "elements":[".gitbook-link"]
             }

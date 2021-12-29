@@ -91,6 +91,18 @@ print(softmax([100,50,23]))
 结果为：[1.00000000e+00 1.92874985e-22 3.62514092e-34]
 
 
+* <font color="blue">`tanh`</font> 
+![tanh](algorithms/tanh.png)
+```python
+import numpy as np
+
+def tanh(x):
+    s1 = np.exp(x) - np.exp(-x)
+    s2 = np.exp(x) + np.exp(-x)
+    s = s1 / s2
+    return s
+```
+
 #### Dropout 
 在机器学习的模型中，如果模型的参数太多，而训练样本又太少，训练出来的模型很容易产生过拟合的现象。在训练神经网络的时候经常会遇到过拟合的问题，过拟合具体表现在：模型在训练数据上损失函数较小，预测准确率较高；但是在测试数据上损失函数比较大，预测准确率较低。
 * 参考 https://zhuanlan.zhihu.com/p/38200980
