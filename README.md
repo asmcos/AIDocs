@@ -20,6 +20,7 @@ git clone https://github.com/asmcos/AIDocs
 cd AIDocs
 gitbook install
 gitbook serve
+gitbook build #编译成static html页面
 ```
 
 #### 加入群
@@ -27,3 +28,6 @@ gitbook serve
 
 #### 问答
 http://www.zhanluejia.net.cn
+
+### website
+http://www.ailabs.net.cn
