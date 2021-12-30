@@ -4,7 +4,7 @@
 强烈建议大家翻阅
 
 [jimzeus的800页面笔记](https://github.com/jimzeus/AANN)
-[`jimseus笔记本站下载`](http://aliabs.net.cn/ebook/关于神经网络的一切.pdf)
+[`jimzeus笔记本站下载`](http://aliabs.net.cn/ebook/关于神经网络的一切.pdf)
 
 
 [《神经网络与深度学习》](https://nndl.github.io/nndl-book.pdf)
