@@ -1,7 +1,9 @@
 #### <font color="blue">什么是 《AI字典》</font>
 《AI字典》是一本开源的，AI相关的名词解释、AI历史文档、关联关系图、书籍介绍、视频资料、网站链接
 
-你可以通过 [zhanluejia](http://www.zhanluejia.net.cn/ai/)浏览
+* 你可以通过 [`zhanluejia`](http://www.zhanluejia.net.cn/ai/)浏览
+
+* 也可以通过 [`AILabs`](http://www.ailabs.net.cn) 浏览
 
 #### <font color="blue"> 如何加入？</font>
 如果你想提交哪怕是一个名词解释,
@@ -21,6 +23,14 @@ cd AIDocs
 gitbook install
 gitbook serve
 gitbook build #编译成static html页面
+```
+
+编译graceful-fs出错处理
+
+```bash
+cd  gitbook-cli/node_modules/npm/
+rm -fr node_modules/graceful-fs/
+npm install graceful-fs@4.1.4 #实际测试这个版本有效。很多版本都不兼容
 ```
 
 #### 加入群
