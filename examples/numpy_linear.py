@@ -19,12 +19,14 @@ w = np.random.normal(0,1)
 
 #100个数字
 x = np.arange(100)
-#产生 100个随机数，在0-20之间
+#产生 一条直线
 actual_y = np.linspace(0,150,len(x))
+#产生一些燥点
 noise = np.random.uniform(0,10,len(x))
+# 让这条直线变成 带有趋势的曲线
 actual_y = actual_y + noise
-# 未建立关联
 
+#画出 实际线 和 无关的直线
 plt.plot(predict(x, w, b),c='r',label="pred")
 plt.plot(actual_y,c='b',label="actual_y")
 plt.legend()
@@ -48,6 +50,8 @@ def partial_w(x,pred_y,y):
 def partial_b(x, pred_y,y):
     return 2 / len(pred_y) * np.sum(pred_y-y)
 
+
+#经过线性回归训练，让这条直线和目标燥点直线接近，
 learning_rate = 0.0001
 result = []
 for i in range(60):
