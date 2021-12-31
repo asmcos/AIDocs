@@ -20,8 +20,9 @@ w = np.random.normal(0,1)
 #100个数字
 x = np.arange(100)
 #产生 100个随机数，在0-20之间
-actual_y = np.random.uniform(0,20,len(x))
-
+actual_y = np.linspace(0,150,len(x))
+noise = np.random.uniform(0,10,len(x))
+actual_y = actual_y + noise
 # 未建立关联
 
 plt.plot(predict(x, w, b),c='r',label="pred")
