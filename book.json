@@ -29,7 +29,7 @@
             }
         },
         "insert-logo": {
-           "url": "/img/ailabs.png",
+           "url": "http://ailabs.net.cn/img/ailabs.png",
            "style": "background: none;width:100%;height:auto;"
        },
         "hide-element": {
