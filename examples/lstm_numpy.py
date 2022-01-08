@@ -91,7 +91,7 @@ class LSTMPopulation(object):
             self.IFOA[t,self.hidden_size:2*self.hidden_size] = self.IFOA[t,self.hidden_size:2*self.hidden_size] + np.multiply(prev_c, self.WpeepIFO[1,:])       # forget gate - adding peephole connections
 
             # Passing through the non-linearities - sigmoid for gates input and forget - output is below due to peephole connections 
-            self.IFOA_f[t,0:2*self.hidden_size] = 1.0 / (1.0 + np.exp(-self.IFOA[t,0:2*self.hidden_size]))
+            self.IFOA_f[t,0:2*self.hidden_size] = sigmod(self.IFOA[t,0:2*self.hidden_size])
             self.IFOA_f[t,3*self.hidden_size:] = np.tanh(self.IFOA[t,3*self.hidden_size:]) # tanh non-linearity for the A gate (before the multiplicated input to the cell)
 
             # Computing the cell activation            
@@ -100,7 +100,6 @@ class LSTMPopulation(object):
             # Computing the output gate with peephole connections
             self.IFOA[t,2*self.hidden_size:3*self.hidden_size] = self.IFOA[t,2*self.hidden_size:3*self.hidden_size] + np.multiply(self.C[t,:], self.WpeepIFO[2,:]) # output gate - adding peephole connections            
 
-            #self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size] = 1.0 / (1.0 + np.exp(-self.IFOA[t,2*self.hidden_size:3*self.hidden_size]))
             self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size] = sigmoid(self.IFOA[t,2*self.hidden_size:3*self.hidden_size])
 
             self.Hout[t,:] = self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size]*np.tanh(self.C[t,:])
