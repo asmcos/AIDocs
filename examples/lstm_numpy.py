@@ -37,6 +37,9 @@ xrange = range
     return h, [h, c]
 
 '''
+def sigmoid(x):
+    s = 1 / (1 + np.exp(-x))
+    return s
 
 class LSTMPopulation(object):
     def __init__(self, input_size, hidden_size):
@@ -97,7 +100,9 @@ class LSTMPopulation(object):
             # Computing the output gate with peephole connections
             self.IFOA[t,2*self.hidden_size:3*self.hidden_size] = self.IFOA[t,2*self.hidden_size:3*self.hidden_size] + np.multiply(self.C[t,:], self.WpeepIFO[2,:]) # output gate - adding peephole connections            
 
-            self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size] = 1.0 / (1.0 + np.exp(-self.IFOA[t,2*self.hidden_size:3*self.hidden_size]))
+            #self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size] = 1.0 / (1.0 + np.exp(-self.IFOA[t,2*self.hidden_size:3*self.hidden_size]))
+            self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size] = sigmoid(self.IFOA[t,2*self.hidden_size:3*self.hidden_size])
+
             self.Hout[t,:] = self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size]*np.tanh(self.C[t,:])
 
         self.c0 = self.C[t,:]
