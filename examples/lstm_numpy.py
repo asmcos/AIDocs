@@ -193,38 +193,37 @@ class LSTMPopulation(object):
 
         # 反转序列
         for t in reversed(xrange(n)):
-            # i,f,o,a
-            #i = self.dIFOA_f[t,:self.hidden_size]
-            #f = self.dIFOA_f[t,self.hidden_size:2*self.hidden_size]
-            #o = self.dIFOA_f[t,2*self.hidden_size:3*self.hidden_size]
-            #a = self.dIFOA_f[t,3*self.hidden_size:]
+            # di,df,do,dg
+            #di = self.dIFOA_f[t,:self.hidden_size]
+            #df = self.dIFOA_f[t,self.hidden_size:2*self.hidden_size]
+            #do = self.dIFOA_f[t,2*self.hidden_size:3*self.hidden_size]
+            #dg = self.dIFOA_f[t,3*self.hidden_size:]
+
+            # i,f,o,g
+            i = self.IFOA_f[t,:self.hidden_size]
+            f = self.IFOA_f[t,self.hidden_size:2*self.hidden_size]
+            o = self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size]
+            g = self.IFOA_f[t,3*self.hidden_size:]
 
             #self.dIFOA_f[t,2*self.hidden_size:3*self.hidden_size] = self.dHout[t,:]*np.tanh(self.C[t,:]) # backprop in to output gate
-            o = self.dHout[t,:]*np.tanh(self.C[t,:])
+            do = self.dHout[t,:]*np.tanh(self.C[t,:])
             # backprop through the tanh non-linearity to get in to the cell, then will continue through it
             #self.dC[t,:] += (self.dHout[t,:] * self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size]) *  (1 - np.tanh(self.C[t,:]**2))
-            self.dC[t,:] += (self.dHout[t,:] * self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size]) *  dtanh(self.C[t,:])
+            #self.dC[t,:] += (self.dHout[t,:] * self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size]) *  dtanh(self.C[t,:])
+            self.dC[t,:] += (self.dHout[t,:] * o )*  dtanh(self.C[t,:])
 
-            """
-            if (t>0):
-                self.dIFOA_f[t,self.hidden_size:2*self.hidden_size] = self.dC[t,:]*self.C[t-1,:] # backprop in to the forget gate
-                self.dC[t-1,:] += self.IFOA_f[t,self.hidden_size:2*self.hidden_size] * self.dC[t,:] # backprop through time for C (The recurrent connection to C from itself)
-            else:
-                self.dIFOA_f[t,self.hidden_size:2*self.hidden_size] = self.dC[t,:]*self.c0 # backprop in to forget gate
-                self.dc0 = self.IFOA_f[t,self.hidden_size:2*self.hidden_size] * self.dC[t,:]
-            """
 
             if (t > 0):
-                f = self.dC[t,:]*self.C[t-1,:] # backprop in to the forget gate
+                df = self.dC[t,:]*self.C[t-1,:] # backprop in to the forget gate
                 self.dC[t-1,:] += self.IFOA_f[t,self.hidden_size:2*self.hidden_size]  * self.dC[t,:] # backprop through time for C (The recurrent connection to C from itself)
             else:
-                f = self.dC[t,:]*self.c0 # backprop in to forget gate
+                df = self.dC[t,:]*self.c0 # backprop in to forget gate
                 self.dc0 = self.IFOA_f[t,self.hidden_size:2*self.hidden_size]  * self.dC[t,:]
 
             #self.dIFOA_f[t,:self.hidden_size] = self.dC[t,:]*self.IFOA_f[t,3*self.hidden_size:] #backprop in to the input gate
             #self.dIFOA_f[t,3*self.hidden_size:] = self.dC[t,:]*self.IFOA_f[t,:self.hidden_size] #backprop in to the a gate                    
-            i = self.dC[t,:] * self.IFOA_f[t,3*self.hidden_size:] #backprop in to the input gate
-            a = self.dC[t,:] * self.IFOA_f[t,:self.hidden_size] ##backprop in to the a gate 
+            di = self.dC[t,:] * g #backprop in to the input gate
+            dg = self.dC[t,:] * i ##backprop in to the a gate 
 
             # backprop through the activation functions
             # for input, forget and output gates - derivative of the sigmoid function
@@ -232,21 +231,13 @@ class LSTMPopulation(object):
 
             #self.dIFOA[t,3*self.hidden_size:] =  self.dIFOA_f[t,3*self.hidden_size:] * (1 - self.IFOA_f[t,3*self.hidden_size:]**2)
             #self.dIFOA[t,3*self.hidden_size:] =   self.dIFOA_f[t,3*self.hidden_size:] * dtanh(self.IFOA_f[t,3*self.hidden_size:])
-
-            self.dIFOA[t,3*self.hidden_size:] = a * dtanh(self.IFOA_f[t,3*self.hidden_size:])
- 
-            y = self.IFOA_f[t,:3*self.hidden_size]
-            #self.dIFOA[t,:3*self.hidden_size] = (y*(1-y)) * self.dIFOA_f[t,:3*self.hidden_size]
-            # i,f,o 
-            # dsigmoid(i) * i , dsigmoid(f) * f ,o...
-            self.dIFOA[t,:3*self.hidden_size] = dsigmoid(y)* self.dIFOA_f[t,:3*self.hidden_size]
-    
-            """
-            self.dIFOA[t,:self.hidden_size] = dsigmoid(i) * i 
-            self.dIFOA[t,1*self.hidden_size:2*self.hidden_size] = dsigmoid(f) * f
-            self.dIFOA[t,2*self.hidden_size:3*self.hidden_size] = dsigmoid(o) * o
-            """
-
+            
+            self.dIFOA[t,3*self.hidden_size:] = dg * dtanh(g)
+            self.dIFOA[t,:self.hidden_size] = dsigmoid(i) * di 
+            self.dIFOA[t,1*self.hidden_size:2*self.hidden_size] = dsigmoid(f) * df
+            self.dIFOA[t,2*self.hidden_size:3*self.hidden_size] = dsigmoid(o) * do
+            #self.dIFOA[t,:] = np.concatenate([dsigmoid(i) * di ,dsigmoid(f) * df,dsigmoid(o) * do,dg * dtanh(g)])
+            
             # backprop the input matrix multiplication            
             self.dWLSTM += np.dot(self.Hin[t:t+1,:].T, self.dIFOA[t:t+1,:])
             self.dHin[t,:] = self.dIFOA[t,:].dot(self.WLSTM.T)
@@ -260,27 +251,16 @@ class LSTMPopulation(object):
                 self.dWpeepIFO[0,:] += np.multiply(self.dIFOA[t,:self.hidden_size], self.c0)
                 self.dWpeepIFO[1,:] += np.multiply(self.dIFOA[t,self.hidden_size:2*self.hidden_size], self.c0)
                 self.dWpeepIFO[2,:] += np.multiply(self.dIFOA[t,2*self.hidden_size:3*self.hidden_size], self.C[t,:])
-            """
-            if t > 0:
-                self.dWpeepIFO[0,:] += np.multiply(i,self.C[t-1,:])
-                self.dWpeepIFO[1,:] += np.multiply(f,self.C[t-1,:])
-                self.dWpeepIFO[2,:] += np.multiply(o,self.C[t,:])
-            else:
-                self.dWpeepIFO[0,:] += np.multiply(i,self.c0)
-                self.dWpeepIFO[1,:] += np.multiply(f,self.c0)
-                self.dWpeepIFO[2,:] += np.multiply(o,self.C[t,:])
-            """
 
             if (t>0):
                 self.dHout[t-1,:] += self.dHin[t,1+self.input_size:]
             else:
                 self.dh0 += self.dHin[t,1+self.input_size:]
-
-            self.dIFOA_f[t,:self.hidden_size] = i
-            self.dIFOA_f[t,self.hidden_size:2*self.hidden_size] = f
-            self.dIFOA_f[t,2*self.hidden_size:3*self.hidden_size] = o
-            self.dIFOA_f[t,3*self.hidden_size:] = a
-            
+            #np.concatenate([di,df,do,dg])
+            self.dIFOA_f[t,:self.hidden_size] = di
+            self.dIFOA_f[t,self.hidden_size:2*self.hidden_size] = df
+            self.dIFOA_f[t,2*self.hidden_size:3*self.hidden_size] = do
+            self.dIFOA_f[t,3*self.hidden_size:] = dg
 
     def get_hidden_output(self):
         return self.Hout
