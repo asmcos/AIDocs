@@ -94,40 +94,24 @@ class LSTMPopulation(object):
                         self.IFOA[t,self.hidden_size*3:]      
     
             # Adding peephole weights connections
-            # self.IFOA[t,:self.hidden_size] = z0 +  np.multiply(prev_c, self.WpeepIFO[0,:])
             z0 = z0 +  np.multiply(prev_c, self.WpeepIFO[0,:])
-
-            
-
-            #self.IFOA[t,self.hidden_size:2*self.hidden_size] = z1 + np.multiply(prev_c, self.WpeepIFO[1,:])       # forget gate - adding peephole connections
-
             z1 = z1  + np.multiply(prev_c, self.WpeepIFO[1,:])
-
-
-            # Passing through the non-linearities - sigmoid for gates input and forget - output is below due to peephole connections 
-            #self.IFOA_f[t,0:2*self.hidden_size] = sigmoid(self.IFOA[t,0:2*self.hidden_size])
 
             i = sigmoid(z0)
             f = sigmoid(z1)
-        
             # keras z2 = self.IFOA_f 3
-            #self.IFOA_f[t,3*self.hidden_size:] = np.tanh(self.IFOA[t,3*self.hidden_size:]) # tanh non-linearity for the A gate (before the multiplicated input to the cell)
             c = np.tanh(z3)
 
             # Computing the cell activation            
-            #self.C[t,:] = self.IFOA_f[t,self.hidden_size:2*self.hidden_size]*prev_c + self.IFOA_f[t,:self.hidden_size]*self.IFOA_f[t,3*self.hidden_size:]
             self.C[t,:] = f * prev_c + i * c
 
             # Computing the output gate with peephole connections
-            #self.IFOA[t,2*self.hidden_size:3*self.hidden_size] = self.IFOA[t,2*self.hidden_size:3*self.hidden_size] + np.multiply(self.C[t,:], self.WpeepIFO[2,:]) # output gate - adding peephole connections            
             z2 = z2 +  np.multiply(self.C[t,:], self.WpeepIFO[2,:])
-            
-            #self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size] = sigmoid(self.IFOA[t,2*self.hidden_size:3*self.hidden_size])
             o = sigmoid(z2)
-
-            #self.Hout[t,:] = self.IFOA_f[t,2*self.hidden_size:3*self.hidden_size]*np.tanh(self.C[t,:])
             self.Hout[t,:] = o * np.tanh(self.C[t,:])
 
+
+            #save for simple_network
             self.IFOA[t,:self.hidden_size] = z0
             self.IFOA[t,self.hidden_size:2*self.hidden_size] = z1
             self.IFOA[t,2*self.hidden_size:3*self.hidden_size] = z2
