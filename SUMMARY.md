@@ -11,8 +11,8 @@
     * [损失函数](algorithms/loss.md)
     * [激活函数](algorithms/activation.md)
 * [吴恩达深度学习课程](deepleanring.ai/readme.md)
-    * [第一门课 神经网络和深度学习](deepleanring.ai/readme.md)
-        * [第一周：深度学习引言](deepleanring.ai/readme.md)
+    * [第一门课 神经网络和深度学习](deepleanring.ai/lesson1-week1.md)
+        * [第一周：深度学习引言](deepleanring.ai/lesson1-week1.md)
         * [第二周：神经网络的编程基础](deepleanring.ai/readme.md)
         * [第三周：浅层神经网络](deepleanring.ai/readme.md)
         * [第四周：深层神经网络](deepleanring.ai/readme.md)
@@ -32,7 +32,7 @@
         * [第一周：循环序列模型](deepleanring.ai/readme.md)
         * [第二周：自然语言处理与词嵌入](deepleanring.ai/readme.md)
         * [第三周：序列模型和注意力机制](deepleanring.ai/readme.md)
-        
+
 * [书籍](book.md)
 * [视频](video.md)
 * [网站资源](web.md)
