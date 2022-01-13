@@ -13,7 +13,7 @@
 * [吴恩达深度学习课程](deepleanring.ai/readme.md)
     * [第一门课 神经网络和深度学习](deepleanring.ai/readme.md)
         * [第一周：深度学习引言](deepleanring.ai/lesson1-week1.md)
-        * [第二周：神经网络的编程基础](deepleanring.ai/readme.md)
+        * [第二周：神经网络的编程基础](deepleanring.ai/lesson1-week2.md)
         * [第三周：浅层神经网络](deepleanring.ai/readme.md)
         * [第四周：深层神经网络](deepleanring.ai/readme.md)
     * [第二门课 改善深层神经网络：超参数调试、正则化以及优化](deepleanring.ai/readme.md)
