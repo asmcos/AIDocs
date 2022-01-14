@@ -1,7 +1,7 @@
 
 #### AI常用算法
-* [线性回归](algorithms/line.html)
-* [LSTM](algorithms/lstm.html)
+* [线性回归](algorithms/line.md)
+* [LSTM](algorithms/lstm.md)
 * RNN
 
 #### 常见小算法
@@ -12,13 +12,13 @@
   1、向量内积
 
 ```python
-import numpy as np 
-b = np.array([2,3]) 
+import numpy as np
+b = np.array([2,3])
 a = np.array([1,2])  
 np.dot(a,b)
 ```
 结果为：`8`,dot会将对应的数字相乘再将结果相加
- 
+
   2. 矩阵乘法运算
   a 矩阵为 n * m ,b 一定为m * xxx 要注意的是注意 相同的这个m的顺序。换了就不行
 
@@ -91,7 +91,7 @@ print(softmax([100,50,23]))
 结果为：[1.00000000e+00 1.92874985e-22 3.62514092e-34]
 
 
-* <font color="blue">`tanh`</font> 
+* <font color="blue">`tanh`</font>
 ![tanh](algorithms/tanh.png)
 ```python
 import numpy as np
@@ -103,7 +103,6 @@ def tanh(x):
     return s
 ```
 
-#### Dropout 
+#### Dropout
 在机器学习的模型中，如果模型的参数太多，而训练样本又太少，训练出来的模型很容易产生过拟合的现象。在训练神经网络的时候经常会遇到过拟合的问题，过拟合具体表现在：模型在训练数据上损失函数较小，预测准确率较高；但是在测试数据上损失函数比较大，预测准确率较低。
 * 参考 https://zhuanlan.zhihu.com/p/38200980
-
