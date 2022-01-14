@@ -53,5 +53,5 @@ markdown_extensions:
 
 extra_javascript:
   - js/mathjax.js
-  - https://cdn.bootcdn.net/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js?features=es6
-  - https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js
+  - js/polyfill.min.js?features=es6
+  - js/tex-mml-chtml.min.js
