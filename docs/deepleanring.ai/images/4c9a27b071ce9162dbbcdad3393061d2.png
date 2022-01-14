@@ -9,18 +9,18 @@
 
 <meta content="object" property="og:type">
 <meta content="GIT CODE" property="og:site_name">
-<meta content="images/b1c9294420787ec6d7724d64ed9b4a43.png · master · mirrors / fengdu78 / deeplearning_ai_books" property="og:title">
+<meta content="images/4c9a27b071ce9162dbbcdad3393061d2.png · master · mirrors / fengdu78 / deeplearning_ai_books" property="og:title">
 <meta content="deeplearning.ai（吴恩达老师的深度学习课程笔记及资源） 🚀 Github 镜像仓库 🚀 源项目地址 ⬇ ⬇..." property="og:description">
 <meta content="https://gitcode.net/assets/gitlab_logo-42ec4452266baa0b5905cd1ef5fbee2f36d39d56ff6ba69b47ef09f90ae3ae85.png" property="og:image">
 <meta content="64" property="og:image:width">
 <meta content="64" property="og:image:height">
-<meta content="https://gitcode.net/mirrors/fengdu78/deeplearning_ai_books/-/blob/master/images/b1c9294420787ec6d7724d64ed9b4a43.png" property="og:url">
+<meta content="https://gitcode.net/mirrors/fengdu78/deeplearning_ai_books/-/blob/master/images/4c9a27b071ce9162dbbcdad3393061d2.png" property="og:url">
 <meta content="summary" property="twitter:card">
-<meta content="images/b1c9294420787ec6d7724d64ed9b4a43.png · master · mirrors / fengdu78 / deeplearning_ai_books" property="twitter:title">
+<meta content="images/4c9a27b071ce9162dbbcdad3393061d2.png · master · mirrors / fengdu78 / deeplearning_ai_books" property="twitter:title">
 <meta content="deeplearning.ai（吴恩达老师的深度学习课程笔记及资源） 🚀 Github 镜像仓库 🚀 源项目地址 ⬇ ⬇..." property="twitter:description">
 <meta content="https://gitcode.net/assets/gitlab_logo-42ec4452266baa0b5905cd1ef5fbee2f36d39d56ff6ba69b47ef09f90ae3ae85.png" property="twitter:image">
 
-<title>images/b1c9294420787ec6d7724d64ed9b4a43.png · master · mirrors / fengdu78 / deeplearning_ai_books · GIT CODE</title>
+<title>images/4c9a27b071ce9162dbbcdad3393061d2.png · master · mirrors / fengdu78 / deeplearning_ai_books · GIT CODE</title>
 <meta content="deeplearning.ai（吴恩达老师的深度学习课程笔记及资源） 🚀 Github 镜像仓库 🚀 源项目地址 ⬇ ⬇..." name="description">
 <link rel="shortcut icon" type="image/png" href="/uploads/-/system/appearance/favicon/1/icon.png" id="favicon" data-original-href="/uploads/-/system/appearance/favicon/1/icon.png" />
 
@@ -32,25 +32,25 @@
 <link rel="stylesheet" media="all" href="/assets/highlight/themes/white-6a22b8b375794a1289df4622d79144821592090a8477236097a5e6dacb004e68.css" />
 
 
-<script nonce="STTaWolVd3J3FiHvF/XaFQ==">
+<script nonce="KO9Da4AbN8Ch07uQLinDPw==">
 //<![CDATA[
 window.gon={};
 //]]>
 </script>
-<script src="/assets/locale/zh_CN/app-b8533506ad09adb5ef8e85268ad751436c39904787fae89a60f714bf7215053c.js" defer="defer" nonce="STTaWolVd3J3FiHvF/XaFQ=="></script>
+<script src="/assets/locale/zh_CN/app-b8533506ad09adb5ef8e85268ad751436c39904787fae89a60f714bf7215053c.js" defer="defer" nonce="KO9Da4AbN8Ch07uQLinDPw=="></script>
 
 
-<script src="/assets/webpack/runtime.9dda8f56.bundle.js" defer="defer" nonce="STTaWolVd3J3FiHvF/XaFQ=="></script>
-<script src="/assets/webpack/main.c226793f.chunk.js" defer="defer" nonce="STTaWolVd3J3FiHvF/XaFQ=="></script>
-<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-03c2a89e.28bbde75.chunk.js" defer="defer" nonce="STTaWolVd3J3FiHvF/XaFQ=="></script>
-<script src="/assets/webpack/commons-pages.admin.application_settings-pages.admin.application_settings.general-pages.admin.applic-d549e6f7.15033b21.chunk.js" defer="defer" nonce="STTaWolVd3J3FiHvF/XaFQ=="></script>
-<script src="/assets/webpack/commons-pages.projects.blame.show-pages.projects.blob.show.a5cadc84.chunk.js" defer="defer" nonce="STTaWolVd3J3FiHvF/XaFQ=="></script>
-<script src="/assets/webpack/pages.projects.blob.show.9d3a13c9.chunk.js" defer="defer" nonce="STTaWolVd3J3FiHvF/XaFQ=="></script>
+<script src="/assets/webpack/runtime.9dda8f56.bundle.js" defer="defer" nonce="KO9Da4AbN8Ch07uQLinDPw=="></script>
+<script src="/assets/webpack/main.c226793f.chunk.js" defer="defer" nonce="KO9Da4AbN8Ch07uQLinDPw=="></script>
+<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-03c2a89e.28bbde75.chunk.js" defer="defer" nonce="KO9Da4AbN8Ch07uQLinDPw=="></script>
+<script src="/assets/webpack/commons-pages.admin.application_settings-pages.admin.application_settings.general-pages.admin.applic-d549e6f7.15033b21.chunk.js" defer="defer" nonce="KO9Da4AbN8Ch07uQLinDPw=="></script>
+<script src="/assets/webpack/commons-pages.projects.blame.show-pages.projects.blob.show.a5cadc84.chunk.js" defer="defer" nonce="KO9Da4AbN8Ch07uQLinDPw=="></script>
+<script src="/assets/webpack/pages.projects.blob.show.9d3a13c9.chunk.js" defer="defer" nonce="KO9Da4AbN8Ch07uQLinDPw=="></script>
 
 
 <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="8DJywCyWiQFtl8V18ZDZt2iK3fNiQhWWpgaRG550VYaV44j/JPnR9ey3H2A4ErssP9KjGNvhv7J1flGe3NQA2Q==" />
-<meta name="csp-nonce" content="STTaWolVd3J3FiHvF/XaFQ==" />
+<meta name="csrf-token" content="d8qm9vboNM9lgdj7/KFKmO5lVopSsp0dqigKNPZqv8YMEKBGhNc83sPFbeSwltUuHL7P9jtcAslzhzONZTqYTQ==" />
+<meta name="csp-nonce" content="KO9Da4AbN8Ch07uQLinDPw==" />
 <meta name="action-cable-url" content="/-/cable" />
 <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 <meta content="#474D57" name="theme-color">
@@ -66,9 +66,9 @@ window.gon={};
 
 </head>
 
-<body class="ui-indigo tab-width-8  gl-browser-generic gl-platform-other" data-find-file="/mirrors/fengdu78/deeplearning_ai_books/-/find_file/master" data-group="fengdu78" data-namespace-id="9523" data-page="projects:blob:show" data-page-type-id="master/images/b1c9294420787ec6d7724d64ed9b4a43.png" data-project="deeplearning_ai_books" data-project-id="4153">
+<body class="ui-indigo tab-width-8  gl-browser-generic gl-platform-other" data-find-file="/mirrors/fengdu78/deeplearning_ai_books/-/find_file/master" data-group="fengdu78" data-namespace-id="9523" data-page="projects:blob:show" data-page-type-id="master/images/4c9a27b071ce9162dbbcdad3393061d2.png" data-project="deeplearning_ai_books" data-project-id="4153">
 
-<script nonce="STTaWolVd3J3FiHvF/XaFQ==">
+<script nonce="KO9Da4AbN8Ch07uQLinDPw==">
 //<![CDATA[
 gl = window.gl || {};
 gl.client = {"isGeneric":true,"isOther":true};
@@ -169,8 +169,8 @@ gl.client = {"isGeneric":true,"isOther":true};
 </div>
 </div>
 </header>
-<script src="/assets/drag_sort/sortable.min-b2de54b4d3ef84fe9656f624cc02d4b9b1d9754fb038148ff1fe06422b5f0f46.js" defer="defer" nonce="STTaWolVd3J3FiHvF/XaFQ=="></script>
-<script src="/assets/side_toolbar-d302f567974818ad159162cb05e273dbf0ac2a382fa364a403de4b801761fed3.js" defer="defer" nonce="STTaWolVd3J3FiHvF/XaFQ=="></script>
+<script src="/assets/drag_sort/sortable.min-b2de54b4d3ef84fe9656f624cc02d4b9b1d9754fb038148ff1fe06422b5f0f46.js" defer="defer" nonce="KO9Da4AbN8Ch07uQLinDPw=="></script>
+<script src="/assets/side_toolbar-d302f567974818ad159162cb05e273dbf0ac2a382fa364a403de4b801761fed3.js" defer="defer" nonce="KO9Da4AbN8Ch07uQLinDPw=="></script>
 
 <div class="layout-page page-with-contextual-sidebar">
 <nav class="breadcrumbs container-fluid container-limited mobile_breadcrumbs" role="navigation">
@@ -183,13 +183,13 @@ gl.client = {"isGeneric":true,"isOther":true};
 
 <li>
 <h2 class="breadcrumbs-sub-title">
-<a href="/mirrors/fengdu78/deeplearning_ai_books/-/blob/master/images/b1c9294420787ec6d7724d64ed9b4a43.png">Repository</a>
+<a href="/mirrors/fengdu78/deeplearning_ai_books/-/blob/master/images/4c9a27b071ce9162dbbcdad3393061d2.png">Repository</a>
 </h2>
 </li>
 </ul>
 </div>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"mirrors","item":"https://gitcode.net/mirrors"},{"@type":"ListItem","position":2,"name":"fengdu78","item":"https://gitcode.net/mirrors/fengdu78"},{"@type":"ListItem","position":3,"name":"deeplearning_ai_books","item":"https://gitcode.net/mirrors/fengdu78/deeplearning_ai_books"},{"@type":"ListItem","position":4,"name":"Repository","item":"https://gitcode.net/mirrors/fengdu78/deeplearning_ai_books/-/blob/master/images/b1c9294420787ec6d7724d64ed9b4a43.png"}]}
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"mirrors","item":"https://gitcode.net/mirrors"},{"@type":"ListItem","position":2,"name":"fengdu78","item":"https://gitcode.net/mirrors/fengdu78"},{"@type":"ListItem","position":3,"name":"deeplearning_ai_books","item":"https://gitcode.net/mirrors/fengdu78/deeplearning_ai_books"},{"@type":"ListItem","position":4,"name":"Repository","item":"https://gitcode.net/mirrors/fengdu78/deeplearning_ai_books/-/blob/master/images/4c9a27b071ce9162dbbcdad3393061d2.png"}]}
 
 </script>
 
@@ -576,7 +576,7 @@ Wiki
   }
 </style>
 <form class="project-refs-form" action="/mirrors/fengdu78/deeplearning_ai_books/-/refs/switch" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="destination" id="destination" value="blob" />
-<input type="hidden" name="path" id="path" value="images/b1c9294420787ec6d7724d64ed9b4a43.png" />
+<input type="hidden" name="path" id="path" value="images/4c9a27b071ce9162dbbcdad3393061d2.png" />
 <div class="dropdown branches-dropdown">
 <button class="dropdown-menu-toggle js-project-refs-dropdown qa-branches-select" type="button" data-report-view="{&quot;spm&quot;:&quot;1033.2243.3001.5864&quot;}" data-report-click="{&quot;spm&quot;:&quot;1033.2243.3001.5864&quot;}" data-toggle="dropdown" data-selected="master" data-ref="master" data-refs-url="/mirrors/fengdu78/deeplearning_ai_books/refs?sort=updated_desc" data-field-name="ref" data-submit-form-on-click="true" data-visit="true"><span class="dropdown-toggle-text ">master</span><svg class="s16 dropdown-menu-toggle-icon gl-top-3" data-testid="chevron-down-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#chevron-down"></use></svg></button>
 <div class="dropdown-menu dropdown-menu-paging dropdown-menu-selectable git-revision-dropdown qa-branches-dropdown">
@@ -598,12 +598,12 @@ Wiki
 <a href="/mirrors/fengdu78/deeplearning_ai_books/-/tree/master/images">images</a>
 </li>
 <li class="breadcrumb-item">
-<a href="/mirrors/fengdu78/deeplearning_ai_books/-/blob/master/images/b1c9294420787ec6d7724d64ed9b4a43.png"><strong>b1c9294420787ec6d7724d64ed9b4a43.png</strong>
+<a href="/mirrors/fengdu78/deeplearning_ai_books/-/blob/master/images/4c9a27b071ce9162dbbcdad3393061d2.png"><strong>4c9a27b071ce9162dbbcdad3393061d2.png</strong>
 </a></li>
 </ul>
 </div>
 <div class="tree-controls gl-children-ml-sm-3"><a class="gl-button btn shortcuts-find-file" rel="nofollow" href="/mirrors/fengdu78/deeplearning_ai_books/-/find_file/master">查找文件
-</a><a class="btn" href="/mirrors/fengdu78/deeplearning_ai_books/-/commits/master/images/b1c9294420787ec6d7724d64ed9b4a43.png">历史</a><a class="btn js-data-file-blob-permalink-url" href="/mirrors/fengdu78/deeplearning_ai_books/-/blob/01802785e55c729f1110f56e436308bddb839b13/images/b1c9294420787ec6d7724d64ed9b4a43.png">永久链接</a><a class="gl-button btn js-data-file-blob-permalink-url" href="/mirrors/fengdu78/deeplearning_ai_books/-/blob/01802785e55c729f1110f56e436308bddb839b13/images/b1c9294420787ec6d7724d64ed9b4a43.png">Permalink</a></div>
+</a><a class="btn" href="/mirrors/fengdu78/deeplearning_ai_books/-/commits/master/images/4c9a27b071ce9162dbbcdad3393061d2.png">历史</a><a class="btn js-data-file-blob-permalink-url" href="/mirrors/fengdu78/deeplearning_ai_books/-/blob/01802785e55c729f1110f56e436308bddb839b13/images/4c9a27b071ce9162dbbcdad3393061d2.png">永久链接</a><a class="gl-button btn js-data-file-blob-permalink-url" href="/mirrors/fengdu78/deeplearning_ai_books/-/blob/01802785e55c729f1110f56e436308bddb839b13/images/4c9a27b071ce9162dbbcdad3393061d2.png">Permalink</a></div>
 </div>
 
 <div class="info-well d-none d-sm-block">
@@ -649,43 +649,43 @@ b80382aa
 <div class="file-header-content">
 <svg class="s16" data-testid="doc-image-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#doc-image"></use></svg>
 <strong class="file-title-name gl-word-break-all" data-qa-selector="file_name_content">
-b1c9294420787ec6d7724d64ed9b4a43.png
+4c9a27b071ce9162dbbcdad3393061d2.png
 </strong>
-<button class="btn btn-clipboard btn-transparent" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn-clipboard btn-transparent" data-title="复制文件路径" data-clipboard-text="{&quot;text&quot;:&quot;images/b1c9294420787ec6d7724d64ed9b4a43.png&quot;,&quot;gfm&quot;:&quot;`images/b1c9294420787ec6d7724d64ed9b4a43.png`&quot;}" type="button" title="复制文件路径" aria-label="复制文件路径"><svg class="s16" data-testid="copy-to-clipboard-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#copy-to-clipboard"></use></svg></button>
+<button class="btn btn-clipboard btn-transparent" data-toggle="tooltip" data-placement="bottom" data-container="body" data-class="btn-clipboard btn-transparent" data-title="复制文件路径" data-clipboard-text="{&quot;text&quot;:&quot;images/4c9a27b071ce9162dbbcdad3393061d2.png&quot;,&quot;gfm&quot;:&quot;`images/4c9a27b071ce9162dbbcdad3393061d2.png`&quot;}" type="button" title="复制文件路径" aria-label="复制文件路径"><svg class="s16" data-testid="copy-to-clipboard-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#copy-to-clipboard"></use></svg></button>
 <small class="mr-1">
-19.1 KB
+54.2 KB
 </small>
 </div>
 
-<div class="file-actions gl-display-flex gl-flex-fill-1 gl-align-self-start gl-md-justify-content-end"><a class="btn btn-primary ide-edit-button ml-2 gl-mr-3 btn-inverted btn-sm" data-url="{:track_event=&gt;&quot;click_edit_ide&quot;, :track_label=&gt;&quot;Web IDE&quot;, :track_property=&gt;&quot;secondary&quot;}" href="/-/ide/project/mirrors/fengdu78/deeplearning_ai_books/edit/master/-/images/b1c9294420787ec6d7724d64ed9b4a43.png">Web IDE</a><div class="btn-group ml-2" role="group">
+<div class="file-actions gl-display-flex gl-flex-fill-1 gl-align-self-start gl-md-justify-content-end"><a class="btn btn-primary ide-edit-button ml-2 gl-mr-3 btn-inverted btn-sm" data-url="{:track_event=&gt;&quot;click_edit_ide&quot;, :track_label=&gt;&quot;Web IDE&quot;, :track_property=&gt;&quot;secondary&quot;}" href="/-/ide/project/mirrors/fengdu78/deeplearning_ai_books/edit/master/-/images/4c9a27b071ce9162dbbcdad3393061d2.png">Web IDE</a><div class="btn-group ml-2" role="group">
 
 </div><div class="btn-group ml-2" role="group">
 
 
-<a download="images/b1c9294420787ec6d7724d64ed9b4a43.png" class="btn btn-sm has-tooltip" target="_blank" rel="noopener noreferrer" aria-label="下载" title="下载" data-container="body" href="/mirrors/fengdu78/deeplearning_ai_books/-/raw/master/images/b1c9294420787ec6d7724d64ed9b4a43.png?inline=false"><svg class="s16" data-testid="download-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#download"></use></svg></a>
+<a download="images/4c9a27b071ce9162dbbcdad3393061d2.png" class="btn btn-sm has-tooltip" target="_blank" rel="noopener noreferrer" aria-label="下载" title="下载" data-container="body" href="/mirrors/fengdu78/deeplearning_ai_books/-/raw/master/images/4c9a27b071ce9162dbbcdad3393061d2.png?inline=false"><svg class="s16" data-testid="download-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#download"></use></svg></a>
 
 </div></div>
 </div>
 
 
 
-<div class="blob-viewer hidden" data-path="images/b1c9294420787ec6d7724d64ed9b4a43.png" data-type="simple">
+<div class="blob-viewer hidden" data-path="images/4c9a27b071ce9162dbbcdad3393061d2.png" data-type="simple">
 <div class="file-content blob_file blob-no-preview">
 <div class="center render-error">
-<a href="/mirrors/fengdu78/deeplearning_ai_books/-/raw/master/images/b1c9294420787ec6d7724d64ed9b4a43.png"><h1 class="light">
+<a href="/mirrors/fengdu78/deeplearning_ai_books/-/raw/master/images/4c9a27b071ce9162dbbcdad3393061d2.png"><h1 class="light">
 <svg class="s16" data-testid="download-icon"><use xlink:href="/assets/icons-15cbe21ccc2237b075efb0b0d170fc8d6716882dbe4fefad34c18b914dbcf811.svg#download"></use></svg>
 </h1>
 <h4>
-Download (19.1 KB)
+Download (54.2 KB)
 </h4>
 </a></div>
 </div>
 
 </div>
 
-<div class="blob-viewer" data-path="images/b1c9294420787ec6d7724d64ed9b4a43.png" data-rich-type="image" data-type="rich">
+<div class="blob-viewer" data-path="images/4c9a27b071ce9162dbbcdad3393061d2.png" data-rich-type="image" data-type="rich">
 <div class="file-content image_file">
-<img alt="b1c9294420787ec6d7724d64ed9b4a43.png" data-src="https://gitcode.net/mirrors/fengdu78/deeplearning_ai_books/-/raw/master/images/b1c9294420787ec6d7724d64ed9b4a43.png" class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+<img alt="4c9a27b071ce9162dbbcdad3393061d2.png" data-src="https://gitcode.net/mirrors/fengdu78/deeplearning_ai_books/-/raw/master/images/4c9a27b071ce9162dbbcdad3393061d2.png" class="lazy" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
 </div>
 
 </div>
@@ -698,13 +698,13 @@ Download (19.1 KB)
 <div class="modal-dialog modal-lg">
 <div class="modal-content">
 <div class="modal-header">
-<h3 class="page-title">Replace b1c9294420787ec6d7724d64ed9b4a43.png</h3>
+<h3 class="page-title">Replace 4c9a27b071ce9162dbbcdad3393061d2.png</h3>
 <button aria-label="关闭" class="close" data-dismiss="modal" type="button">
 <span aria-hidden>&times;</span>
 </button>
 </div>
 <div class="modal-body">
-<form class="js-quick-submit js-upload-blob-form" data-method="put" action="/mirrors/fengdu78/deeplearning_ai_books/-/update/master/images/b1c9294420787ec6d7724d64ed9b4a43.png" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="1F0jgdkDE0W2VbgF1sY5Y/ebcDjQB0PhCjxsKKoaltKxjNm+0WxLsTd1YhAfRFv4oMMO02mk6cXZRKyt6LrDjQ==" /><div class="dropzone">
+<form class="js-quick-submit js-upload-blob-form" data-method="put" action="/mirrors/fengdu78/deeplearning_ai_books/-/update/master/images/4c9a27b071ce9162dbbcdad3393061d2.png" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="q8Um3bq4OtHpFnHa/GwgYU5lxQ0nPRoMl+q1fOIGQLzQHyBtyIcywE9SxMWwW7/XvL5ccU7ThdhORYzFcVZnNw==" /><div class="dropzone">
 <div class="dropzone-previews blob-upload-dropzone-previews">
 <p class="dz-message light">
 拖放文件到此处或<a class="markdown-selector" href="#">点击上传</a>
@@ -714,12 +714,12 @@ Download (19.1 KB)
 <br>
 <div class="dropzone-alerts gl-alert gl-alert-danger gl-mb-5 data" style="display:none"></div>
 <div class="form-group row commit_message-group">
-<label class="col-form-label col-sm-2" for="commit_message-d2ee3369d9ff1be4332073b292a28000">提交信息
+<label class="col-form-label col-sm-2" for="commit_message-2d0bc148bbe8b92c8975c34d93bd0242">提交信息
 </label><div class="col-sm-10">
 <div class="commit-message-container">
 <div class="max-width-marker"></div>
-<textarea name="commit_message" id="commit_message-d2ee3369d9ff1be4332073b292a28000" class="form-control js-commit-message" placeholder="Replace b1c9294420787ec6d7724d64ed9b4a43.png" required="required" rows="3">
-Replace b1c9294420787ec6d7724d64ed9b4a43.png</textarea>
+<textarea name="commit_message" id="commit_message-2d0bc148bbe8b92c8975c34d93bd0242" class="form-control js-commit-message" placeholder="Replace 4c9a27b071ce9162dbbcdad3393061d2.png" required="required" rows="3">
+Replace 4c9a27b071ce9162dbbcdad3393061d2.png</textarea>
 </div>
 </div>
 </div>
@@ -784,7 +784,7 @@ Replace file
 
 
 
-<script nonce="STTaWolVd3J3FiHvF/XaFQ==">
+<script nonce="KO9Da4AbN8Ch07uQLinDPw==">
 //<![CDATA[
 if ('loading' in HTMLImageElement.prototype) {
   document.querySelectorAll('img.lazy').forEach(img => {

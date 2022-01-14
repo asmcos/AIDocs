@@ -32,25 +32,25 @@
 <link rel="stylesheet" media="all" href="/assets/highlight/themes/white-6a22b8b375794a1289df4622d79144821592090a8477236097a5e6dacb004e68.css" />
 
 
-<script nonce="bb7aEWDd/ODkbgmq08ZWQQ==">
+<script nonce="Jrgs4L1n1y8EBxZcgHfvdg==">
 //<![CDATA[
 window.gon={};
 //]]>
 </script>
-<script src="/assets/locale/zh_CN/app-b8533506ad09adb5ef8e85268ad751436c39904787fae89a60f714bf7215053c.js" defer="defer" nonce="bb7aEWDd/ODkbgmq08ZWQQ=="></script>
+<script src="/assets/locale/zh_CN/app-b8533506ad09adb5ef8e85268ad751436c39904787fae89a60f714bf7215053c.js" defer="defer" nonce="Jrgs4L1n1y8EBxZcgHfvdg=="></script>
 
 
-<script src="/assets/webpack/runtime.9dda8f56.bundle.js" defer="defer" nonce="bb7aEWDd/ODkbgmq08ZWQQ=="></script>
-<script src="/assets/webpack/main.c226793f.chunk.js" defer="defer" nonce="bb7aEWDd/ODkbgmq08ZWQQ=="></script>
-<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-03c2a89e.28bbde75.chunk.js" defer="defer" nonce="bb7aEWDd/ODkbgmq08ZWQQ=="></script>
-<script src="/assets/webpack/commons-pages.admin.application_settings-pages.admin.application_settings.general-pages.admin.applic-d549e6f7.15033b21.chunk.js" defer="defer" nonce="bb7aEWDd/ODkbgmq08ZWQQ=="></script>
-<script src="/assets/webpack/commons-pages.projects.blame.show-pages.projects.blob.show.a5cadc84.chunk.js" defer="defer" nonce="bb7aEWDd/ODkbgmq08ZWQQ=="></script>
-<script src="/assets/webpack/pages.projects.blob.show.9d3a13c9.chunk.js" defer="defer" nonce="bb7aEWDd/ODkbgmq08ZWQQ=="></script>
+<script src="/assets/webpack/runtime.9dda8f56.bundle.js" defer="defer" nonce="Jrgs4L1n1y8EBxZcgHfvdg=="></script>
+<script src="/assets/webpack/main.c226793f.chunk.js" defer="defer" nonce="Jrgs4L1n1y8EBxZcgHfvdg=="></script>
+<script src="/assets/webpack/commons-pages.projects-pages.projects.activity-pages.projects.alert_management.details-pages.project-03c2a89e.28bbde75.chunk.js" defer="defer" nonce="Jrgs4L1n1y8EBxZcgHfvdg=="></script>
+<script src="/assets/webpack/commons-pages.admin.application_settings-pages.admin.application_settings.general-pages.admin.applic-d549e6f7.15033b21.chunk.js" defer="defer" nonce="Jrgs4L1n1y8EBxZcgHfvdg=="></script>
+<script src="/assets/webpack/commons-pages.projects.blame.show-pages.projects.blob.show.a5cadc84.chunk.js" defer="defer" nonce="Jrgs4L1n1y8EBxZcgHfvdg=="></script>
+<script src="/assets/webpack/pages.projects.blob.show.9d3a13c9.chunk.js" defer="defer" nonce="Jrgs4L1n1y8EBxZcgHfvdg=="></script>
 
 
 <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="7g856GAVVaqsttIsig9jqv3YHmlQE0X/06NVg4IFWrlpuidG2QdkRtSl1B74Z/VjxHIA8Qhc6Ngzqux+4Rt3eQ==" />
-<meta name="csp-nonce" content="bb7aEWDd/ODkbgmq08ZWQQ==" />
+<meta name="csrf-token" content="ZY5VNMCLr+qxmCHxhx/TPyk8Fgxo9Ml5AAGUJWVdCj7oseD3nYx17DxJIKC3MR/6pskB6CiwSBjgrep2FME2NA==" />
+<meta name="csp-nonce" content="Jrgs4L1n1y8EBxZcgHfvdg==" />
 <meta name="action-cable-url" content="/-/cable" />
 <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
 <meta content="#474D57" name="theme-color">
@@ -68,7 +68,7 @@ window.gon={};
 
 <body class="ui-indigo tab-width-8  gl-browser-generic gl-platform-other" data-find-file="/mirrors/fengdu78/deeplearning_ai_books/-/find_file/master" data-group="fengdu78" data-namespace-id="9523" data-page="projects:blob:show" data-page-type-id="master/images/cd75ffa2793fa4af02bdd869fe962bc1.png" data-project="deeplearning_ai_books" data-project-id="4153">
 
-<script nonce="bb7aEWDd/ODkbgmq08ZWQQ==">
+<script nonce="Jrgs4L1n1y8EBxZcgHfvdg==">
 //<![CDATA[
 gl = window.gl || {};
 gl.client = {"isGeneric":true,"isOther":true};
@@ -169,8 +169,8 @@ gl.client = {"isGeneric":true,"isOther":true};
 </div>
 </div>
 </header>
-<script src="/assets/drag_sort/sortable.min-b2de54b4d3ef84fe9656f624cc02d4b9b1d9754fb038148ff1fe06422b5f0f46.js" defer="defer" nonce="bb7aEWDd/ODkbgmq08ZWQQ=="></script>
-<script src="/assets/side_toolbar-d302f567974818ad159162cb05e273dbf0ac2a382fa364a403de4b801761fed3.js" defer="defer" nonce="bb7aEWDd/ODkbgmq08ZWQQ=="></script>
+<script src="/assets/drag_sort/sortable.min-b2de54b4d3ef84fe9656f624cc02d4b9b1d9754fb038148ff1fe06422b5f0f46.js" defer="defer" nonce="Jrgs4L1n1y8EBxZcgHfvdg=="></script>
+<script src="/assets/side_toolbar-d302f567974818ad159162cb05e273dbf0ac2a382fa364a403de4b801761fed3.js" defer="defer" nonce="Jrgs4L1n1y8EBxZcgHfvdg=="></script>
 
 <div class="layout-page page-with-contextual-sidebar">
 <nav class="breadcrumbs container-fluid container-limited mobile_breadcrumbs" role="navigation">
@@ -704,7 +704,7 @@ Download (71.0 KB)
 </button>
 </div>
 <div class="modal-body">
-<form class="js-quick-submit js-upload-blob-form" data-method="put" action="/mirrors/fengdu78/deeplearning_ai_books/-/update/master/images/cd75ffa2793fa4af02bdd869fe962bc1.png" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="Utk8/f3B86AGiuwx8AMBKbrZmp1+SwdbI99F/W9ueGjVbCJTRNPCTH6Z6gOCa5fgg3OEBSYEqnzD1vwADHBVqA==" /><div class="dropzone">
+<form class="js-quick-submit js-upload-blob-form" data-method="put" action="/mirrors/fengdu78/deeplearning_ai_books/-/update/master/images/cd75ffa2793fa4af02bdd869fe962bc1.png" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="fqrnim12HMkVg3nD8C3pT28IiRYNcuGmpq4Eg3IWyUrzlVJJMHHGz5hSeJLAAyWK4P2e8k02YMdGAnrQA4r1QA==" /><div class="dropzone">
 <div class="dropzone-previews blob-upload-dropzone-previews">
 <p class="dz-message light">
 拖放文件到此处或<a class="markdown-selector" href="#">点击上传</a>
@@ -714,11 +714,11 @@ Download (71.0 KB)
 <br>
 <div class="dropzone-alerts gl-alert gl-alert-danger gl-mb-5 data" style="display:none"></div>
 <div class="form-group row commit_message-group">
-<label class="col-form-label col-sm-2" for="commit_message-477f08eb8ad88cb3247986fabe16ab54">提交信息
+<label class="col-form-label col-sm-2" for="commit_message-76cc7948f7c858072484da3dce7ad9ca">提交信息
 </label><div class="col-sm-10">
 <div class="commit-message-container">
 <div class="max-width-marker"></div>
-<textarea name="commit_message" id="commit_message-477f08eb8ad88cb3247986fabe16ab54" class="form-control js-commit-message" placeholder="Replace cd75ffa2793fa4af02bdd869fe962bc1.png" required="required" rows="3">
+<textarea name="commit_message" id="commit_message-76cc7948f7c858072484da3dce7ad9ca" class="form-control js-commit-message" placeholder="Replace cd75ffa2793fa4af02bdd869fe962bc1.png" required="required" rows="3">
 Replace cd75ffa2793fa4af02bdd869fe962bc1.png</textarea>
 </div>
 </div>
@@ -784,7 +784,7 @@ Replace file
 
 
 
-<script nonce="bb7aEWDd/ODkbgmq08ZWQQ==">
+<script nonce="Jrgs4L1n1y8EBxZcgHfvdg==">
 //<![CDATA[
 if ('loading' in HTMLImageElement.prototype) {
   document.querySelectorAll('img.lazy').forEach(img => {
