@@ -1,0 +1,57 @@
+site_name: 《AI字典》
+theme:
+  name: material
+  font: false
+  custom_dir: overrides
+
+extra:
+    logo_nav: http://ailabs.net.cn/img/ailabs.png
+
+nav:
+  - 简介: README.md
+  - 名词:
+    - 关于名词: words.md
+    - 机器学习: words/ml.md
+    - 神经网络: words/ann.md
+  - 算法:
+    - 关于算法: algorithm.md
+    - 线性回归: algorithms/line.md
+    - lstm: algorithms/lstm.md
+    - 损失函数: algorithms/loss.md
+    - 激活函数: algorithms/activation.md
+  - 吴恩达深度学习课程:
+    - 课程简介: deepleanring.ai/readme.md
+    - 第一门课 神经网络和深度学习:
+      - 第一周：深度学习引言: deepleanring.ai/lesson1-week1.md
+      - 第二周：神经网络的编程基础: deepleanring.ai/readme.md
+      - 第三周：浅层神经网络: deepleanring.ai/readme.md
+      - 第四周：深层神经网络: deepleanring.ai/readme.md
+    - 第二门课 改善深层神经网络：超参数调试、正则化以及优化:
+      - 第一周：深度学习的实用层面: deepleanring.ai/readme.md
+      - 第二周：优化算法: deepleanring.ai/readme.md
+      - 第三周：超参数调试，batch正则化和程序框架: deepleanring.ai/readme.md
+    - 第三门课 结构化机器学习项目:
+      - 第一周：机器学习策略（1）: deepleanring.ai/readme.md
+      - 第二周：机器学习策略（2）: deepleanring.ai/readme.md
+    - 第四门课 卷积神经网络:
+      - 第一周：卷积神经网络: deepleanring.ai/readme.md
+      - 第二周：深度卷积网络：实例探究: deepleanring.ai/readme.md
+      - 第三周：目标检测: deepleanring.ai/readme.md
+      - 第四周：特殊应用：人脸识别和神经风格转换: deepleanring.ai/readme.md
+    - 第五门课 序列模型: 
+      - 第一周：循环序列模型: deepleanring.ai/readme.md
+      - 第二周：自然语言处理与词嵌入: deepleanring.ai/readme.md
+      - 第三周：序列模型和注意力机制: deepleanring.ai/readme.md
+  - 书籍: book.md
+  - 视频: video.md
+  - 网站资源: web.md
+  - 配色表: color.md
+
+markdown_extensions:
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - js/mathjax.js
+  - https://cdn.bootcdn.net/ajax/libs/babel-polyfill/7.12.1/polyfill.min.js?features=es6
+  - https://cdn.bootcdn.net/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.min.js
