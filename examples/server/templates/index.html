@@ -28,6 +28,12 @@ editor.customConfig.uploadImgServer = '/uploads'
 editor.customConfig.menus = ['image']
 editor.create()
 
+editor.config.uploadImgHooks.success=function(e,t,data){
+    console.log(data.data[0])
+}
+
+
+
 </script>
 </body>
 </html>
