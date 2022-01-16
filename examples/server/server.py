@@ -2,6 +2,8 @@ from flask import Flask
 from flask import render_template,jsonify,request
 import random,string
 import os,sys
+from db import insert, get_all 
+
 app = Flask(__name__,static_folder="./uploads")
 
 if not os.path.exists(sys.path[0]+'/uploads'):
