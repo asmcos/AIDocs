@@ -12,11 +12,28 @@
   <!-- Site CSS -->
   <!-- core CSS -->
   <link href="http://www.zhanluejia.net.cn/corlate/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+   }
+   .alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+   }
+  </style>
 </head>
 <body>
 {% raw %}
 <div id="app" class="container">
-  <div>点击下面的"<i class="w-e-icon-image"></i>"上传，或者粘贴截图,完成后点击"识别"</div>
+  <div class="alert alert-primary" role="alert">
+    吴恩达老师的 深度学习 逻辑回归代码测试，请测试的时候上传小分辨率的 （<100x100）图片(测试是否是猫)。
+  </div>
+  <div>点击下面的"<i class="w-e-icon-image"></i>"上传，或者粘贴截图直接上传图片,上传成功后点击"识别"</div>
        <div id="editer1" style="width:300px;height:300px;">
        </div>
        <p style="margin-top:50px;"></p> 
