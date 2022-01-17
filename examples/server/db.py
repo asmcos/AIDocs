@@ -21,15 +21,17 @@ class predImage(Base):
     imagelabel= Column(Integer)
     pred =      Column(Integer)
 
+    def to_dict(self):
+       return {c.name: getattr(self, c.name) for c in self.__table__.columns}
 
 
-engine = create_engine('sqlite:///'+sys.path[0]+'/img.db')
+engine = create_engine('sqlite:///'+sys.path[0]+'/img.db',connect_args={"check_same_thread": False})
 
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
 session = Session()
 
-def insert(filename,label):
+def insert(filename,pred):
     img = predImage(imagename=filename, pred=pred)
     session.add(img)
     session.commit()
@@ -45,8 +47,8 @@ def deletepred(predid):
     session.commit() 
 
 def get_all_pred():
-    imgs = session.query(preImage)
-    return imgs
+    imgs = session.query(predImage)
+    return [img.to_dict() for img in imgs]
 
 def makeImagefrompred(predId,label):
     predimg = session.query(predImage).get(imgid)

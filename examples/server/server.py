@@ -29,10 +29,10 @@ def uploadsfile():
 def pred():
     if request.method == 'POST':
         filename = request.form.get('filename')
-        print(filename)
-        print(pred_cat(sys.path[0]+filename))
-        #insert(filename,pred)
-    return jsonify({"pred":1})
+        pred = pred_cat(sys.path[0]+filename)
+        print(filename,pred)
+        insert(filename,pred)
+    return jsonify({"pred":pred})
 
 @app.route("/accept",methods=['GET', 'POST'])
 def accept():
@@ -40,6 +40,13 @@ def accept():
         pass
         #makeImagefrompred(predid,label)
     return jsonify({"success":1})
+
+@app.route("/get_all",methods=['GET', 'POST'])
+def get_preds():
+    if request.method == 'GET':
+           datas = get_all_pred()
+    return jsonify(datas)
+
 
 
 @app.route('/')

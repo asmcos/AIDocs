@@ -8,8 +8,9 @@ import matplotlib.pyplot as plt
 import h5py
 import imageio
 from skimage.transform import resize
+import skimage
 from PIL import Image
-import os
+import os,sys
 
 dir_name = os.path.dirname(__file__)
 #吴恩达老师的猫,通过网上下载
@@ -254,11 +255,9 @@ def predict(w, b, X):
     Returns:
     Y_prediction -- a numpy array (vector) containing all predictions (0/1) for the examples in X
     '''
-    
     m = X.shape[1]
     Y_prediction = np.zeros((1,m))
     w = w.reshape(X.shape[0], 1)
-    
     # Compute vector "A" predicting the probabilities of a cat being present in the picture
     ### START CODE HERE ### (≈ 1 line of code)
     A =   sigmoid(np.dot(w.T, X) + b)
@@ -275,7 +274,7 @@ def predict(w, b, X):
         ### END CODE HERE ###
     
     assert(Y_prediction.shape == (1, m))
-    
+
     return Y_prediction
 
 
@@ -334,8 +333,20 @@ def model(X_train, Y_train, X_test, Y_test, num_iterations = 2000, learning_rate
 
 d = model(train_set_x, train_set_y, test_set_x, test_set_y, num_iterations = 2000, learning_rate = 0.005, print_cost = True)
 
+
 def pred_cat(filename):
-    image = np.array(Image.open(filename).convert('RGB'))
-    print(image.shape)
-    my_image = resize(image, output_shape=(num_px,num_px)).reshape((1, num_px*num_px*3)).T
-    return predict(d['w'],d['b'],my_image)
+    image = np.array(Image.open(filename).convert('RGB')) 
+    my_image = resize(image, output_shape=(num_px,num_px),order=1)
+    my_image = skimage.img_as_float(my_image).reshape(1,(num_px*num_px*3)).T 
+    pred = predict(d['w'],d['b'],my_image)
+    return int(pred[0][0])
+
+if __name__ == '__main__':
+    import sys
+    filename = sys.argv[1]
+    plt.imshow(resize(np.array(Image.open(filename).convert('RGB')),output_shape=(num_px,num_px)))
+    pred = pred_cat(filename)
+    print(pred)
+    plt.show()
+    
+    
