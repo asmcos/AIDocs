@@ -11,15 +11,15 @@ class Image(Base):
 
     id = Column(Integer, primary_key=True)
     imagename = Column(String(255))
-    imagelabel = Column(Integer)
+    label = Column(Integer)
 
 class predImage(Base):
     __tablename__ = 'predimg_info'
 
     id =        Column(Integer, primary_key=True)
     imagename = Column(String(255))
-    imagelabel= Column(Integer)
     pred =      Column(Integer)
+    label    =      Column(Integer)
 
     def to_dict(self):
        return {c.name: getattr(self, c.name) for c in self.__table__.columns}
@@ -38,7 +38,7 @@ def insert(filename,pred):
 
 def update(imgid,y):
     img = session.query(predImage).get(imgid)
-    img.imagelabel = y
+    img.label = y
     session.commit()
 
 def deletepred(predid):
@@ -57,7 +57,7 @@ def makeImagefrompred(predId,label):
         if img:
             img.imagelabel=label
         else:
-            img = Image({'imagename':predimg.imagename,'imagelabel':label})
+            img = Image({'imagename':predimg.imagename,'label':label})
             session.add(img)
         session.commit()
     return "ok"
@@ -66,6 +66,6 @@ def makeImagefrompred(predId,label):
 def get_all():
     imgs = session.query(Image)
     for row in imgs: 
-        print(row.id, row.imagename,row.imagelabel)
+        print(row.id, row.imagename,row.label)
     return imgs
 
