@@ -14,15 +14,57 @@
   <link href="http://www.zhanluejia.net.cn/corlate/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
+<div id="app" class="container">
+  <div>点击下面的"<i class="w-e-icon-image"></i>"上传，或者粘贴截图,完成后点击"识别"</div>
+       <div id="editer1" style="width:300px;height:300px;">
+       </div>
+       <p style="margin-top:50px;"></p> 
+       <a class="btn btn-success" @click="pred">识别</a>
 
-<div>点击下面的"<i class="w-e-icon-image"></i>"上传，或者粘贴截图,完成后点击"识别"</div>
-
-<div id="editer1" style="width:300px;height:300px;">
 </div>
-
 <script src="http://www.zhanluejia.net.cn/wangEditor/wangEditor.min.js"></script>
 
+    <script src="http://www.zhanluejia.net.cn/corlate/js/jquery.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/vue/3.1.0/vue.global.js"></script>
+  <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
 <script>
+
+var filename=""
+     const VueApp = {
+        data() {
+            return {
+        	    main:{}
+	        }
+        },
+    
+        created() {
+	    },
+	
+        mounted () {
+            var that = this
+        },
+        methods: {
+            pred(){
+                if (filename == ""){
+                    alert("请先上传图片")
+                    return
+                }
+                $.ajax({
+                          type:"POST",
+                          url:"/pred",
+                          data:{
+                            filename:filename,
+                            },
+                        success:function(data){
+                            console.log(data)
+                        }
+                      }) //ajax
+            }
+        // These methods won't trigger a watcher because we changed only a property of Object/Array,
+        // not the Object/Array itself
+        }
+      }//VueApp
+      window.vue = Vue.createApp(VueApp).mount('#app')
 
 const E = window.wangEditor
 const editor = new E('#editer1')
@@ -32,9 +74,11 @@ editor.customConfig.menus = ['image']
 editor.create()
 
 editor.config.uploadImgHooks.success=function(e,t,data){
-    console.log(data.data[0])
+    filename = data.data[0]
+    console.log(filename)
 }
 
+ 
 
 
 </script>
