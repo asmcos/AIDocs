@@ -604,9 +604,11 @@ def two_layer_model(X, Y, layers_dims, learning_rate=0.0075, num_iterations=3000
 parameters = two_layer_model(train_x, train_y, layers_dims = (n_x, n_h, n_y), num_iterations = 2500, print_cost=True)
 
 predictions_train = predict(train_x, train_y, parameters)
+predictions_test = predict(test_x, test_y, parameters)
 
 def pred_cat(filename):
     image = np.array(Image.open(filename).convert('RGB'))
+    # resize convert RGB(0-255) to 0-1
     my_image = resize(image, output_shape=(num_px,num_px),order=1)
     my_image = skimage.img_as_float(my_image).reshape(1,(num_px*num_px*3)).T
     pred = predict(my_image,None,parameters)

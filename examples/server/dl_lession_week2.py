@@ -13,6 +13,8 @@ from PIL import Image
 import os,sys
 
 dir_name = os.path.dirname(__file__)
+if dir_name == "":
+    dir_name="."
 #吴恩达老师的猫,通过网上下载
 #有209张图片作为训练集，50张图片作为测试集，图片中有的是猫的图片，有的不是。
 #每张图片的像素大小为64*64
