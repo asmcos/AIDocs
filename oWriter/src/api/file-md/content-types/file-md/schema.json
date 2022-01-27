@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "file_mds",
+  "info": {
+    "singularName": "file-md",
+    "pluralName": "file-mds",
+    "displayName": "file_md"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "filename": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "book": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::book.book"
+    }
+  }
+}
