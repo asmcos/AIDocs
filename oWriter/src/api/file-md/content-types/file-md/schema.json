@@ -4,7 +4,8 @@
   "info": {
     "singularName": "file-md",
     "pluralName": "file-mds",
-    "displayName": "file_md"
+    "displayName": "file_md",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,10 +18,10 @@
     "content": {
       "type": "richtext"
     },
-    "book": {
+    "ebook": {
       "type": "relation",
       "relation": "oneToOne",
-      "target": "api::book.book"
+      "target": "api::ebook.ebook"
     }
   }
 }

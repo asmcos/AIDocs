@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * book router.
+ * ebook router.
  */
 
 const { createCoreRouter } = require('@strapi/strapi').factories;
 
-module.exports = createCoreRouter('api::book.book');
+module.exports = createCoreRouter('api::ebook.ebook');

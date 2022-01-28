@@ -1,10 +1,11 @@
 {
   "kind": "collectionType",
-  "collectionName": "books",
+  "collectionName": "ebooks",
   "info": {
-    "singularName": "book",
-    "pluralName": "books",
-    "displayName": "book"
+    "singularName": "ebook",
+    "pluralName": "ebooks",
+    "displayName": "ebook",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,6 +17,9 @@
     },
     "yml": {
       "type": "richtext"
+    },
+    "folder": {
+      "type": "string"
     }
   }
 }
