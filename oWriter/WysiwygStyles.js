@@ -47,6 +47,7 @@ export const EditorAndPreviewWrapper = styled.div`
   position: relative;
   height:90%;
   overflow:scroll;
+  line-height:1.8;
 `;
 
 // FOOTER

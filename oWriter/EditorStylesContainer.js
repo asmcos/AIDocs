@@ -14,6 +14,7 @@ export const EditorStylesContainer = styled.div`
     font-size: ${14 / 16}rem;
     height: 95%;
     color: ${({ theme }) => theme.colors.neutral800};
+    line-height:1.6;
     direction: ltr;
     font-family: --apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
       'Open Sans', 'Helvetica Neue', sans-serif;
@@ -337,5 +338,6 @@ export const EditorStylesContainer = styled.div`
 
   span {
     color: ${({ theme }) => theme.colors.neutral800} !important;
+    line-height:1.8;
   }
 `;
