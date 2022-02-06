@@ -13,7 +13,7 @@ const path  = require('path')
 var exec = require("child_process").exec;
 
 
-var host = "http://127.0.0.1:1337"
+var host = "http://127.0.0.1:1338"
 //var host = "http://119.91.153.63:1337"
 
 // bookid
@@ -121,7 +121,7 @@ module.exports = createCoreController('api::ebook.ebook',({ strapi }) =>  ({
   // Method 1: Creating an entirely custom action
   async booksync(ctx) {
 
-	bookupdate(ctx)
+	await bookupdate(ctx)
 
 	return "ebook ok"
   }
