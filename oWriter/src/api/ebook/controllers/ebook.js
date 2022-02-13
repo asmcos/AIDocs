@@ -112,7 +112,17 @@ async function bookupdate(ctx){
             }
             console.log("stdout:",stdout)
             console.log("stderr:",stderr);
-        });
+            //保存
+            var tt = new Date()
+            exec("cd "+ bookpath +";git add *;git commit -m 'modify " + tt.toDateString() +"'",
+		    function(err,stdout,stderr){
+
+                console.log("stdout:",stdout)
+               console.log("stderr:",stderr);
+	    });
+
+
+	});
 
 }
 
