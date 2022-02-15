@@ -95,6 +95,8 @@ async function bookupdate(ctx){
         if (!fs.existsSync(bookpath)) fs.mkdirSync(bookpath,{ recursive: true });
         fs.writeFileSync(path.resolve(bookpath,'mkdocs.yml'),buffer,{flag:"w+"})
 
+	//每一次调用重新初始化列表
+        filelist = []
         nav.forEach(function(item){
             parse_nav(item)
         })
