@@ -70,7 +70,9 @@ async function bookupdate(ctx){
         const res = await fetch(host+"/api/ebooks")
         var datas = await res.json()
         var objdata = ""
-        for (var i = 0; i < datas.data.length;i++){
+
+	bookid = ctx.query.bookid
+	for (var i = 0; i < datas.data.length;i++){
                   var data = datas.data[i]
                   if(data.id == bookid){
                        objdata = data

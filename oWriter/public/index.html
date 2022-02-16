@@ -23,19 +23,33 @@
           <div class="text-align-right">
             <p>Thu, 27 Jan 2022 08:52:25 GMT</p>
             
-            <a class="cta cta-primary"  style="margin-top:28px;"  onclick="refresh()" target="_blank" title="Click to remake books" >同步</a>
+            <a class="cta cta-primary"  style="margin-top:28px;"  onclick="refresh(1)" target="_blank" title="Click to remake books" >同步</a>
             
           </div>
         </div>
     
-
+     <div class="informations">
+          <div>
+		  <span class="environment"><a href="http://www.ailabs.net.cn/rustai">Rust人工智能资源库
+			</a></span>
+            <p>
+            </p>
+          </div>
+          <div class="text-align-right">
+            <p>Wed, 16 Feb 2022 08:01:25 GMT</p>
+            
+            <a class="cta cta-primary"  style="margin-top:28px;"  onclick="refresh(2)" target="_blank" title="Click to remake books" >同步</a>
+            
+          </div>
+        </div>
+ 
 
     </section>
    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.min.js"></script>
 
    <script>
-	function refresh(){
-		axios.get("/api/ebooks/sync?bookid=1")
+	function refresh(i){
+		axios.get("/api/ebooks/sync?bookid="+i)
 			.then(function(response){
 				console.log(response)
 				alert("成功")
