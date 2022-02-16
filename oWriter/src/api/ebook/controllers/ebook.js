@@ -94,7 +94,16 @@ async function bookupdate(ctx){
         }
 
         //创建mkdocs 项目配置文件
-        if (!fs.existsSync(bookpath)) fs.mkdirSync(bookpath,{ recursive: true });
+	//第一次创建准备环境
+        if (!fs.existsSync(bookpath)) {
+		fs.mkdirSync(bookpath,{ recursive: true });
+		fs.mkdirSync(bookdocpath,{ recursive: true });
+                exec("cd "+ bookpath +";git init",
+		    function(err,stdout,stderr){
+	        });
+		//git 忽略每次的site文件，因为每次生成都会产生新的site，导致git仓库非常大
+                fs.writeFileSync(path.resolve(bookpath,'.gitignore'),"site/",{flag:"w+"})
+	}
         fs.writeFileSync(path.resolve(bookpath,'mkdocs.yml'),buffer,{flag:"w+"})
 
 	//每一次调用重新初始化列表
