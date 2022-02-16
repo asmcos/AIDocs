@@ -1,0 +1,42 @@
+site_name: 《Rust人工智能资源库》
+theme:
+  name: material
+  font: false
+  custom_dir: overrides
+
+extra:
+    logo_nav: http://ailabs.net.cn/img/ailabs.png
+
+nav:
+  - 本书简介: README.md
+
+
+markdown_extensions:
+  - md_in_html
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.critic
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - footnotes
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - js/mathjax.js
+  - js/polyfill.min.js?features=es6
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-mml-chtml.js
+  
