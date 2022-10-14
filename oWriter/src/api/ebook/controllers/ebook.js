@@ -146,7 +146,10 @@ module.exports = createCoreController('api::ebook.ebook',({ strapi }) =>  ({
 
 	await bookupdate(ctx)
 
-	return "ebook ok"
+	return "<html><body>更新 完成，等待2秒自动返回</body><script>"+
+                  "setTimeout(function(){history.back();}, 2000);"+
+                "</script></html>"
+
   }
 
 }));
